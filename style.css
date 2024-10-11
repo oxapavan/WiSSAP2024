@@ -215,7 +215,6 @@ header {
     color: #fff;
     font-family: 'Raleway';
     font-weight: var(--primaryFontWeight);
-    text-transform: uppercase;
 }
 
 .landing-page-heading {
@@ -537,7 +536,7 @@ header {
     width: 75px;
     height: 3px;
     background: var(--primaryHoverColor);
-    top: 44%;
+    top: 13%;
     left: 44.8%;
 }
 
