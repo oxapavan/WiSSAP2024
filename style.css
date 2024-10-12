@@ -226,8 +226,18 @@ header {
     font-weight: 700;
     letter-spacing: 0.2em;
     position: relative;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.landing-page-heading h2 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    position: relative;
     margin-bottom: 80px;
     text-align: center;
+    color: goldenrod;
 }
 
 .landing-page-heading::after {
@@ -238,7 +248,7 @@ header {
     height: 3px;
     display: block;
     left: 47.3%;
-    top: 46.7%;
+    top: 50.7%;
 }
 
 .landing-page-heading h4 {
