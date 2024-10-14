@@ -1656,5 +1656,15 @@ header {
     }
 }
 
+.contact-block-content a {
+    color: #ffffff; /* A standard link blue color */
+    text-decoration: none; /* Removes the default underline */
+    transition: color 0.3s ease; /* Smooth color transition for hover effect */
+}
+
+.contact-block-content a:hover {
+    color: var(--primaryHoverColor); /* A darker blue for hover state */
+    text-decoration: underline; /* Adds underline on hover */
+}
 /* SECTION - 10 MEDIA QUERY END */
 /* SECTION - 10 END */
