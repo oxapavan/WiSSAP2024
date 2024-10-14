@@ -16,6 +16,23 @@ html{
     overflow: scroll;
     overflow-x: hidden;
 }
+
+.speaker-pictures {
+    border: 5px solid transparent; /* Initial border */
+    border-radius: 15px; /* Rounded corners */
+    transition: border-color 0.3s ease; /* Smooth transition */
+    overflow: hidden; /* Ensures the border rounds nicely */
+}
+
+.speakers-block:hover .speaker-pictures {
+    border-color: #FEEDCF; /* Change border color on hover */
+}
+
+.speaker-img {
+    object-fit: cover; /* Ensures images cover the area */
+    height: 550px; /* Set a fixed height */
+}
+
 ::-webkit-scrollbar {
     width: 0px;
 }
@@ -52,7 +69,6 @@ html{
 body {
     font-family: 'Poppins' !important;
 }
-
 /* NAVBAR START */
 
 .main_nav-bar {
