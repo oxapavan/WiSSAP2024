@@ -242,8 +242,18 @@ header {
     font-weight: 700;
     letter-spacing: 0.2em;
     position: relative;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.landing-page-heading h2 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    position: relative;
     margin-bottom: 80px;
     text-align: center;
+    color: goldenrod;
 }
 
 .landing-page-heading::after {
@@ -254,7 +264,7 @@ header {
     height: 3px;
     display: block;
     left: 47.3%;
-    top: 46.7%;
+    top: 50.7%;
 }
 
 .landing-page-heading h4 {
@@ -1662,5 +1672,63 @@ header {
     }
 }
 
+.contact-block-content a {
+    color: #ffffff; /* A standard link blue color */
+    text-decoration: none; /* Removes the default underline */
+    transition: color 0.3s ease; /* Smooth color transition for hover effect */
+}
+
+.contact-block-content a:hover {
+    color: var(--primaryHoverColor); /* A darker blue for hover state */
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+
+.owl-carousel .col-md-12 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styles for the logo wrapper */
+.sponsor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Keep the height fixed */
+}
+
+/* Styles for square logos */
+.sponsor img {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Special scaling for logos that are wide (rectangular) */
+.sponsor img.wide {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+    transform: scale(1.5); /* Scale up rectangular logos */
+}
+
+/* Optional styling for consistency */
+.sponsor img.square {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+    transform: scale(1); /* No scaling for square logos */
+}
+
+.sponsor:hover img.square {
+    transform: scale(1.1); /* Add scaling on hover */
+    transition: transform 0.3s ease;
+}
+
+.sponsor:hover img.wide {
+    transform: scale(1.6); /* Add scaling on hover */
+    transition: transform 0.3s ease;
+}
 /* SECTION - 10 MEDIA QUERY END */
 /* SECTION - 10 END */
