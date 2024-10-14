@@ -1666,5 +1666,53 @@ header {
     color: var(--primaryHoverColor); /* A darker blue for hover state */
     text-decoration: underline; /* Adds underline on hover */
 }
+
+
+.owl-carousel .col-md-12 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styles for the logo wrapper */
+.sponsor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Keep the height fixed */
+}
+
+/* Styles for square logos */
+.sponsor img {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Special scaling for logos that are wide (rectangular) */
+.sponsor img.wide {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+    transform: scale(1.5); /* Scale up rectangular logos */
+}
+
+/* Optional styling for consistency */
+.sponsor img.square {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+    transform: scale(1); /* No scaling for square logos */
+}
+
+.sponsor:hover img.square {
+    transform: scale(1.1); /* Add scaling on hover */
+    transition: transform 0.3s ease;
+}
+
+.sponsor:hover img.wide {
+    transform: scale(1.6); /* Add scaling on hover */
+    transition: transform 0.3s ease;
+}
 /* SECTION - 10 MEDIA QUERY END */
 /* SECTION - 10 END */
