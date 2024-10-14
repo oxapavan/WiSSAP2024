@@ -479,77 +479,11 @@ generateSchedule(1);
 // fakeloader initialization
 $(document).ready(function () {
     $.fakeLoader({
-        timeToHide: 5000,
+        timeToHide: 2000,
         bgColor: "rgb(27, 208, 126)",
-        spinner: "spinner4"
+        spinner: "spinner7"
     });
 });
-// Google Map API
-let map;
-
-function initMap() {
-    var location = {
-        lat: 39.045753,
-        lng: -76.641273
-    };
-    map = new google.maps.Map(document.getElementById("map"), {
-        center: location,
-        zoom: 12
-    });
-    /*
-    
-    */
-    addMarker({
-        coordinates: {
-            lat: 38.9897,
-            lng: -76.9378
-        },
-        content: '<h6>Axon - Maryland Branch</h6>'
-    });
-    addMarker({
-        coordinates: {
-            lat: 42.4072,
-            lng: -71.3824
-        },
-        content: '<h6>Axon - Massachusetts Branch</h6>'
-    });
-    addMarker({
-        coordinates: {
-            lat: 39.5501,
-            lng: -105.7821
-        },
-        content: '<h6>Axon - Colorado Branch</h6>'
-    });
-    addMarker({
-        coordinates: {
-            lat: 32.3547,
-            lng: -89.3985
-        },
-        content: '<h6>Axon - Mississippi Branch</h6>'
-    });
-    addMarker({
-        coordinates: {
-            lat: 37.7749,
-            lng: -122.4194
-        },
-        content: '<h6>Axon - California Branch</h6>'
-    });
-
-    function addMarker(properties) {
-        var marker = new google.maps.Marker({
-            position: properties.coordinates,
-            map: map
-        });
-        if (properties.content) {
-            var infoWindow = new google.maps.InfoWindow({
-                content: properties.content
-            });
-            marker.addListener('click', function () {
-                infoWindow.open(map, marker);
-            })
-        }
-    }
-}
 // $(function () {
 //     $("html").niceScroll();
 // });
