@@ -1100,6 +1100,7 @@ header {
 .price-tag {
     background: #22283a;
     color: #fff;
+    border-radius: 15px;
 }
 
 .price-tag h1 {
@@ -1112,6 +1113,7 @@ header {
     background: #2b314a;
     color: #fff;
     text-transform: uppercase;
+    border-radius: 0px 0px 15px 15px;
 }
 
 .price-tag-desc h5 {
@@ -1125,20 +1127,46 @@ header {
 }
 
 .pricing-btn button {
-    background: #fff;
+    background: linear-gradient(45deg, #ff6b6b, #f06595, #cc5de8, #845ef7, #5c7cfa, #339af0, #22b8cf, #20c997, #51cf66, #94d82d, #fcc419, #ff922b);
+    background-size: 300% 300%;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     font-size: 15px;
     border: none;
     outline: none;
-    border-radius: 1px;
+    border-radius: 7px;
     transition: var(--primaryTransition);
+    color: #fff;
+    animation: gradientAnimation 5s ease infinite;
 }
 
 .pricing-btn button:hover {
-    background: #000 !important;
-    color: #fff !important;
+    background: linear-gradient(45deg, #ff922b, #fcc419, #94d82d, #51cf66, #20c997, #22b8cf, #339af0, #5c7cfa, #845ef7, #cc5de8, #f06595, #ff6b6b);
+    background-size: 300% 300%;
+    color: #000 !important;
+    animation: gradientAnimationHover 5s ease infinite, joom 0.5s ease;
+}
+
+@keyframes joom {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes gradientAnimationHover {
+    0% { background-position: 100% 50%; }
+    50% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
 }
 
 .active-tag {
@@ -1620,9 +1648,8 @@ header {
 }
 
 .footer-block {
-    display: inline-flex;
-    width: 100%;
-    flex-direction: row;
+        display: inline-block;
+        text-align: center;
 }
 
 .footer-block span {
