@@ -30,7 +30,7 @@ html{
 
 .speaker-img {
     object-fit: cover; /* Ensures images cover the area */
-    height: 550px; /* Set a fixed height */
+    height: 450px; /* Set a fixed height */
 }
 
 ::-webkit-scrollbar {
